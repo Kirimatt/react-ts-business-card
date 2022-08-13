@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Опыт</title>
+    <link rel="shortcut icon" th:href="@{/pictures/logo_site.ico}" type="image/x-icon">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+
+</head>
+
+<body>
+
+<main class="transition-fade" id="swup">
+
+    <header class="header">
+        <span class="logo"><a th:href="@{/ru}">Главная</a></span>
+        <span class="logo"><a th:href="@{/ru/experience}">Опыт</a></span>
+        <span class="logo"><a th:href="@{/ru/stack}">Навыки</a></span>
+        <span class="logo"><a th:href="@{/ru/education}">Образование</a></span>
+        <span class="logo"><a th:href="@{/en}">En</a></span>
+    </header>
+
+    <div class="epam">
+        <div class="hero">
+            <div class="container hero__container">
+                <div class="hero__about">
+                    <h1 class="hero__title">EPAM Systems</h1>
+                    <h2 class="hero__subtitle">Software Engineer</h2>
+                    <br>
+                    <h2 class="hero__subtitle">Dec 2021 - Present</h2>
+
+                    <p class="hero__description">
+                        Поддержка и доработка FinTech микросервисов;
+                    </p>
+                    <p class="hero__description">
+                        Демо-показы разработанных функций;
+                    </p>
+                    <p class="hero__description">
+                        Unit тестирование.
+                    </p>
+
+
+                </div>
+
+                <div class="hero__box">
+                    <img alt="" class="hero__box-img" th:src="@{/pictures/logo/epam_logo.png}">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="oniip">
+        <div class="hero">
+            <div class="container hero__container">
+                <div class="hero__about">
+                    <h1 class="hero__title">АО "ОНИИП"</h1>
+                    <h2 class="hero__subtitle">Инженер-программист</h2>
+                    <br>
+                    <h2 class="hero__subtitle">May 2021 - Nov 2021</h2>
+
+                    <p class="hero__description">
+                        Настройка и внедрение Vaadin-проекта на Spring;
+                    </p>
+                    <p class="hero__description">
+                        Библиотеки для работы со звонками между терминалами, SSH и парсом Excel;
+                    </p>
+                    <p class="hero__description">
+                        Desktop программа для настройки базовой станции;
+                    </p>
+                    <p class="hero__description">
+                        Различные bash скрипты для автоматизации и инсталляции программного обеспечения.
+                    </p>
+
+
+                </div>
+
+                <div class="hero__box">
+                    <img alt="" class="hero__box-img" th:src="@{/pictures/logo/oniip_logo.png}">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+
+</html>

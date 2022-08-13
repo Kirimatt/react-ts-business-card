@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Технологии</title>
+    <link rel="shortcut icon" th:href="@{/pictures/logo_site.ico}" type="image/x-icon">
+
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+
+</head>
+
+<body>
+
+<main class="transition-fade" id="swup">
+
+    <header class="header">
+        <span class="logo"><a th:href="@{/ru}">Главная</a></span>
+        <span class="logo"><a th:href="@{/ru/experience}">Опыт</a></span>
+        <span class="logo"><a th:href="@{/ru/stack}">Навыки</a></span>
+        <span class="logo"><a th:href="@{/ru/education}">Образование</a></span>
+        <span class="logo"><a th:href="@{/en}">En</a></span>
+    </header>
+
+    <div class="hero">
+        <div class="container hero__container">
+            <div class="hero__about">
+                <h1 class="hero__title">Java</h1>
+                <h2 class="hero__subtitle">Spring boot</h2>
+                <br>
+                <p class="hero__description">
+                    Gitlab, GitHub, Gerrit
+                </p>
+
+                <p class="hero__description">
+                    Maven, Gradle
+                </p>
+
+                <p class="hero__description">
+                    JDBC, PostgreSQL, MySQL, Cassandra, Hibernate
+                </p>
+
+                <p class="hero__description">
+                    k8s, Jenkins, OpenShift, Docker
+                </p>
+
+                <p class="hero__description">
+                    Feign, Lombok, Tomcat
+                </p>
+
+                <p class="hero__description">
+                    JUnit, PowerMockito
+                </p>
+
+                <p class="hero__description">
+                    Agile, Scrum
+                </p>
+
+            </div>
+
+            <div class="hero__box__green">
+                <img alt="" class="hero__box-img" th:src="@{/pictures/logo/spring_logo.png}">
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+</body>
+
+</html>
