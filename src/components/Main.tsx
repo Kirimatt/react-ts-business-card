@@ -1,5 +1,4 @@
 import React from "react";
-import {useTypedSelector} from "../hooks/useTypedSelector";
 import '../App.css';
 import Preview from "./Preview";
 import Skills from "./Skills";
@@ -8,16 +7,6 @@ import Experience from "./Experience";
 import Education from "./Education";
 
 const Main: React.FC = () => {
-    const {loading, error} = useTypedSelector(state => state.info)
-
-    if (loading) {
-        return <h1>Идет загрузка...</h1>
-    }
-
-    if (error) {
-        return <h1>{error}</h1>
-    }
-
     return (
         <Routes>
             <Route path={'/'} element={<Preview/>}/>

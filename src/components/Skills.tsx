@@ -1,19 +1,8 @@
 import React from "react";
-import {useTypedSelector} from "../hooks/useTypedSelector";
 import '../App.css';
 import springUrl from '../pages/skills/spring_logo.png'
 
 const Skills: React.FC = () => {
-    const {loading, error} = useTypedSelector(state => state.info)
-
-    if (loading) {
-        return <h1>Идет загрузка...</h1>
-    }
-
-    if (error) {
-        return <h1>{error}</h1>
-    }
-
     return (
         <div className="hero">
             <div className="container hero__container">
@@ -46,7 +35,7 @@ const Skills: React.FC = () => {
                     </p>
 
                     <p className="hero__description">
-                        React, JavaScript, TypeScript
+                        React, JavaScript, TypeScript, Redux
                     </p>
 
                     <p className="hero__description">

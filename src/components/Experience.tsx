@@ -1,5 +1,4 @@
 import React from "react";
-import {useTypedSelector} from "../hooks/useTypedSelector";
 import '../App.css';
 import epamLogo from '../pages/experience/epam_logo.png'
 import oniipLogo from '../pages/experience/oniip_logo.png'
@@ -21,20 +20,13 @@ const logo = (logoString: string): string => {
 }
 
 const Experience: React.FC = () => {
-    const {loading, error} = useTypedSelector(state => state.info)
+
 
     // @ts-ignore
     const {t, ready} = useTranslation(namespaces.pages.experience);
 
     if (!ready) return <h1>Идет загрузка...</h1>;
 
-    if (loading) {
-        return <h1>Идет загрузка...</h1>
-    }
-
-    if (error) {
-        return <h1>{error}</h1>
-    }
 
     const jobs = t('jobs', {returnObjects: true})
 

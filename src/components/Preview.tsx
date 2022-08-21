@@ -1,22 +1,13 @@
 import React from 'react';
-import {useTypedSelector} from "../hooks/useTypedSelector";
 import '../App.css';
 import photoUrl from '../pages/index/photo_of_me.png';
 import {useTranslation} from "react-i18next";
 import {namespaces} from "../i18n/i18n.constants";
 
 const Preview: React.FC = () => {
-    const {loading, error} = useTypedSelector(state => state.info)
+
     // @ts-ignore
     const {t} = useTranslation(namespaces.pages.preview);
-
-    if (loading) {
-        return <h1>Идет загрузка...</h1>
-    }
-
-    if (error) {
-        return <h1>{error}</h1>
-    }
 
     return (
         <div className="hero">
