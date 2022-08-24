@@ -3,11 +3,14 @@ import '../App.css';
 import educationUrl from '../pages/education/omgups_logo.png';
 import {useTranslation} from "react-i18next";
 import {namespaces} from "../i18n/i18n.constants";
+import {LeftArrow} from "./LeftArrow";
+import {RightArrow} from "./RightArrow";
+import {useSwiper} from "swiper/react";
 
 const Education: React.FC = () => {
 
     const {t} = useTranslation(namespaces.pages.education);
-
+    const swiper = useSwiper()
     return (
         <div className="hero">
             <div className="container hero__container">
@@ -24,7 +27,12 @@ const Education: React.FC = () => {
                 </div>
 
             </div>
-
+            <div className="arrow-6__left" onClick={() => swiper.slidePrev()}>
+                <LeftArrow/>
+            </div>
+            <div className="arrow-6__right" onClick={() => swiper.slideNext()}>
+                <RightArrow/>
+            </div>
         </div>
     );
 }

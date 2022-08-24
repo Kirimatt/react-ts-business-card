@@ -1,8 +1,9 @@
-import React, {useState} from "react";
+import React from "react";
 import '../App.css';
 import {Link} from "react-router-dom";
 import {namespaces} from "../i18n/i18n.constants";
 import {useTranslation} from "react-i18next";
+import {HeaderType} from "../types/HeaderType";
 
 //@ts-ignore
 export const Header: React.FC = ({onChangeLang,

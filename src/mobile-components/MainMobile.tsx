@@ -1,31 +1,27 @@
 import React from "react";
 import '../App.css';
-import Preview from "../components/Preview";
-import Skills from "../components/Skills";
-import Experience from "../components/Experience";
-import Education from "../components/Education";
 // Import Swiper React components
-import {Swiper, SwiperSlide, useSwiperSlide} from 'swiper/react';
+import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
+import PreviewMobile from "./PreviewMobile";
+import SkillsMobile from "./SkillsMobile";
+import ExperienceMobile from "./ExperienceMobile";
+import EducationMobile from "./EducationMobile";
 
-const MainMobile: React.FC = () => {
-    const swiperSlide = useSwiperSlide();
-
+const MainMobile = () => {
     return (
         <Swiper
             spaceBetween={50}
             slidesPerView={1}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
+            loop={true}
         >
-            <SwiperSlide><Preview/></SwiperSlide>
-            <SwiperSlide><Skills/></SwiperSlide>
-            <SwiperSlide><Experience/></SwiperSlide>
-            <SwiperSlide><Education/></SwiperSlide>
-
+            <SwiperSlide><PreviewMobile/>
+            </SwiperSlide>
+            <SwiperSlide><SkillsMobile/></SwiperSlide>
+            <SwiperSlide><ExperienceMobile/></SwiperSlide>
+            <SwiperSlide><EducationMobile/></SwiperSlide>
         </Swiper>
-
     );
 }
 

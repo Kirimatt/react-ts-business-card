@@ -18,8 +18,6 @@ const HeaderMobile: React.FC = ({onChangeLang,
                     }>{lang === "EN" ? "RU" : "EN"}</a></span>
             </div>
         </header>
-
-
     );
 }
 
