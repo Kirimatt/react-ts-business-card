@@ -11,27 +11,25 @@ import MainMobile from "./mobile-components/MainMobile";
 const App = () => {
     const [lang, setLang] = useState("EN")
 
-    createI18n(lang.toLowerCase())
+    const handleChangeLanguage = () => {
+        setLang(lang === "EN" ? "RU" : "EN")
+    }
 
+    createI18n(lang.toLowerCase())
 
     return (
         <div>
             <BrowserView>
                 <HelmHeader/>
                 <Header
-                    // @ts-ignore
-                    onChangeLang={() => {
-                        return setLang(lang === "EN" ? "RU" : "EN");
-                    }}/>
+                    lang={lang}
+                    handleChangeLanguage={handleChangeLanguage}
+                />
                 <Main/>
             </BrowserView>
             <MobileView>
                 <HelmHeader/>
-                <HeaderMobile
-                    // @ts-ignore
-                    onChangeLang={() => {
-                        return setLang(lang === "EN" ? "RU" : "EN");
-                    }}/>
+                <HeaderMobile lang={lang} handleChangeLanguage={handleChangeLanguage}/>
                 <MainMobile/>
             </MobileView>
         </div>
