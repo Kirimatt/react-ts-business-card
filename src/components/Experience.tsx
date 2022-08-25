@@ -11,6 +11,7 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/virtual';
+import {Job} from "../types/Experience";
 
 const logo = (logoString: string): string => {
     switch (logoString) {

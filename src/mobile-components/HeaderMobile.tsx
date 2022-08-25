@@ -1,21 +1,14 @@
-import React, {useState} from "react";
+import React from "react";
 import '../App.css';
+import {HeaderType} from "../types/HeaderType";
 
-//@ts-ignore
-const HeaderMobile: React.FC = ({onChangeLang,
-                                }) => {
-    const [lang, setLang] = useState("EN")
-
+const HeaderMobile = (Config: HeaderType) => {
     return (
         <header className="header">
             <div>
-                <span className="logo"><a
-                    onClick={
-                        () => {
-                            onChangeLang();
-                            setLang(lang === "EN" ? "RU" : "EN");
-                        }
-                    }>{lang === "EN" ? "RU" : "EN"}</a></span>
+                <button className="langMobileButton" onClick={Config.handleChangeLanguage}>
+                    {Config.lang === "EN" ? "RU" : "EN"}
+                </button>
             </div>
         </header>
     );

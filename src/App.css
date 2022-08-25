@@ -69,6 +69,42 @@ html.is-animating .transition-fade {
     color: white;
 }
 
+.langButton {
+    background-color:transparent;
+    border-radius:17px;
+    border:0 solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-size: min(2.2vw, 24px);
+    padding:6px 24px;
+    text-decoration:none;
+    margin-top: 5px;
+}
+
+.langMobileButton {
+    background-color:transparent;
+    border-radius:17px;
+    border:0 solid #dcdcdc;
+    display:inline-block;
+    cursor:pointer;
+    color:#666666;
+    font-size:15px;
+    padding:6px 24px;
+    text-decoration:none;
+    margin-top: 10px;
+}
+
+.langButton:hover {
+    background-color: #666666;
+    color: #000000
+}
+
+.langButton:active {
+    position:relative;
+    top:1px;
+}
+
 .hero {
     min-height: 100vh;
     display: flex;
