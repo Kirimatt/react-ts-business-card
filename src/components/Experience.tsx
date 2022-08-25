@@ -38,7 +38,6 @@ const Experience = () => {
         <div className="flex">
             <Swiper mousewheel={true}
                     slideToClickedSlide={true}
-                    direction="vertical"
                     modules={[Virtual]}
                     spaceBetween={50}
                     slidesPerView={1}>
