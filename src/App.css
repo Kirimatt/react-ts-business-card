@@ -7,6 +7,7 @@
 body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    max-height: 100vh;
 }
 
 img {
@@ -136,7 +137,6 @@ html.is-animating .transition-fade {
 .hero__title {
     font-size: 48px;
     line-height: 1.1;
-
     margin-bottom: 20px;
 }
 
@@ -206,27 +206,27 @@ html.is-animating .transition-fade {
     top: 250px;
 }
 
-.arrow-6 svg {
-    width: 20px;
+.arrow-6__right svg {
+    width: 40px;
     height: auto;
     margin: 0 2rem;
     cursor: pointer;
     overflow: visible;
 }
-.arrow-6 svg polygon,
-.arrow-6 svg path {
+.arrow-6__right svg polygon,
+.arrow-6__right svg path {
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
     fill: #337AB7;
 }
-.arrow-6 svg:hover polygon,
-.arrow-6 svg:hover path {
+.arrow-6__right svg:hover polygon,
+.arrow-6__right svg:hover path {
     transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
     fill: #000;
 }
-.arrow-6 svg:hover .arrow-6-pl {
+.arrow-6__right svg:hover .arrow-6-pl {
     animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
-.arrow-6 svg:hover .arrow-6-pl-fixed {
+.arrow-6__right svg:hover .arrow-6-pl-fixed {
     animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 

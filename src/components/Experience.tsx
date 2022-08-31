@@ -27,9 +27,7 @@ const logo = (logoString: string): string => {
 }
 
 const Experience = () => {
-
     const {t, ready} = useTranslation(namespaces.pages.experience);
-
     if (!ready) return <h1>Идет загрузка...</h1>;
 
     const jobs: any = t('jobs', {returnObjects: true})
