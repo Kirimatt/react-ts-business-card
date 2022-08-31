@@ -131,7 +131,6 @@ html.is-animating .transition-fade {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .hero__title {
@@ -197,13 +196,13 @@ html.is-animating .transition-fade {
 .arrow-6__right {
     position: absolute;
     right: 10px;
-    top: 250px;
+    top: 50vh;
 }
 
 .arrow-6__left {
     position: absolute;
     left: 10px;
-    top: 250px;
+    top: 50vh;
 }
 
 .arrow-6__right svg {
@@ -227,6 +226,30 @@ html.is-animating .transition-fade {
     animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 .arrow-6__right svg:hover .arrow-6-pl-fixed {
+    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+.arrow-6__left svg {
+    width: 20px;
+    height: auto;
+    margin: 0 2rem;
+    cursor: pointer;
+    overflow: visible;
+}
+.arrow-6__left svg polygon,
+.arrow-6__left svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #337AB7;
+}
+.arrow-6__left svg:hover polygon,
+.arrow-6__left svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #000;
+}
+.arrow-6__left svg:hover .arrow-6-pl {
+    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6__left svg:hover .arrow-6-pl-fixed {
     animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 

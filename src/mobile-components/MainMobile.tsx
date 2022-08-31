@@ -16,8 +16,7 @@ const MainMobile = () => {
             slidesPerView={1}
             loop={true}
         >
-            <SwiperSlide><PreviewMobile/>
-            </SwiperSlide>
+            <SwiperSlide><PreviewMobile/></SwiperSlide>
             <SwiperSlide><SkillsMobile/></SwiperSlide>
             <SwiperSlide><ExperienceMobile/></SwiperSlide>
             <SwiperSlide><EducationMobile/></SwiperSlide>
