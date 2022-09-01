@@ -26,7 +26,7 @@ const Preview: React.FC = () => {
                             className='bx bxl-linkedin'></i></a>
                         <a className="hero__link" href="https://github.com/Kirimatt/"><i className='bx bxl-github'></i></a>
                         <a className="hero__link"
-                           href="https://drive.google.com/file/d/1Zrh_KRf4OZvRmmQCu7Rsm7RN_dTKUU6c/view?usp=sharing"><i
+                           href="https://drive.google.com/file/d/1EIuLJ8JgcR9-G_4F1N5d6J9AoAa5XXMB/view?usp=sharing"><i
                             className='bx bxs-download'></i></a>
                     </div>
 
