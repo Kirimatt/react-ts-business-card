@@ -206,9 +206,8 @@ html.is-animating .transition-fade {
 }
 
 .arrow-6__right svg {
-    width: 40px;
+    width: 3vh;
     height: auto;
-    margin: 0 2rem;
     cursor: pointer;
     overflow: visible;
 }
@@ -230,9 +229,8 @@ html.is-animating .transition-fade {
 }
 
 .arrow-6__left svg {
-    width: 20px;
+    width: 3vh;
     height: auto;
-    margin: 0 2rem;
     cursor: pointer;
     overflow: visible;
 }
@@ -250,6 +248,65 @@ html.is-animating .transition-fade {
     animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 .arrow-6__left svg:hover .arrow-6-pl-fixed {
+    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+.arrow-6__right__mobile {
+    position: absolute;
+    right: 2px;
+    top: 50vh;
+}
+
+.arrow-6__left__mobile {
+    position: absolute;
+    left: 2px;
+    top: 50vh;
+}
+
+.arrow-6__right__mobile svg {
+    width: 20px;
+    height: auto;
+
+    cursor: pointer;
+    overflow: visible;
+}
+.arrow-6__right__mobile svg polygon,
+.arrow-6__right__mobile svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #337AB7;
+}
+.arrow-6__right__mobile svg:hover polygon,
+.arrow-6__right__mobile svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #000;
+}
+.arrow-6__right__mobile svg .arrow-6-pl {
+    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6__right__mobile svg .arrow-6-pl-fixed {
+    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+
+.arrow-6__left__mobile svg {
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    overflow: visible;
+}
+.arrow-6__left__mobile svg polygon,
+.arrow-6__left__mobile svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #337AB7;
+}
+.arrow-6__left__mobile svg:hover polygon,
+.arrow-6__left__mobile svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #000;
+}
+.arrow-6__left__mobile svg .arrow-6-pl {
+    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6__left__mobile svg .arrow-6-pl-fixed {
     animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
 }
 

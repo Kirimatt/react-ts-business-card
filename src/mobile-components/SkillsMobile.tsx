@@ -53,10 +53,10 @@ const Skills: React.FC = () => {
                 </div>
 
             </div>
-            <div className="arrow-6__left" onClick={() => swiper.slidePrev()}>
+            <div className="arrow-6__left__mobile" onClick={() => swiper.slidePrev()}>
                 <LeftArrow/>
             </div>
-            <div className="arrow-6__right" onClick={() => swiper.slideNext()}>
+            <div className="arrow-6__right__mobile" onClick={() => swiper.slideNext()}>
                 <RightArrow/>
             </div>
         </div>
