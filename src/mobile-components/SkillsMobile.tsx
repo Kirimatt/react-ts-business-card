@@ -39,7 +39,7 @@ const Skills: React.FC = () => {
                     </p>
 
                     <p className="hero__description">
-                        React, JavaScript, TypeScript, Redux
+                        React, JavaScript, TypeScript, HTML, CSS
                     </p>
 
                     <p className="hero__description">
